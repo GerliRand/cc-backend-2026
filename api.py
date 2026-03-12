@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import pickle
 
 app = Flask(__name__)
+CORS(app)
 
 # Read pickle file (using Module 2 model)
 with open("sentiment_analysis_model.pkl", "rb") as file:
