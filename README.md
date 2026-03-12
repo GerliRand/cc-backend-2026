@@ -59,3 +59,22 @@ OR
 python app.py
 ```
 
+## Running with Docker 
+This project also includes Docker support.
+
+Build and run container:
+```
+docker compose build
+docker compose up
+OR
+docker compose up --build
+```
+
+The backend will be available at:
+`http://localhost:5556`
+
+
+## Deployment
+The backend is deployed on **CSC Rahti** using a GitHub webhook pipeline.
+
+Live backend endpoint: `https://cc-backend-2026-git-cloud-computing-rahti.2.rahtiapp.fi/ `
